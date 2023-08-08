@@ -1,0 +1,19 @@
+header{
+    color: rgb(236, 236, 243);
+    background-color: rgb(44, 40, 22);
+}
+
+.Navbar{
+    background-color: rgb(40, 89, 40);
+    /* display: inline-flex; */
+    color: lightcyan;
+    border-radius: 25px;
+    margin: 6px;
+    padding: 6px;
+    
+}
+.Navbar ul li{
+    display: inline-flex;
+    padding: 12px;
+    margin: 12px;
+}
