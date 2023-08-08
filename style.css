@@ -8,12 +8,31 @@ header{
     /* display: inline-flex; */
     color: lightcyan;
     border-radius: 25px;
-    margin: 6px;
-    padding: 6px;
+    margin: 2px;
+    list-style: square;
     
+}
+.Navbar ul{
+    list-style: inside;
+    color: beige;
 }
 .Navbar ul li{
     display: inline-flex;
     padding: 12px;
-    margin: 12px;
+    /* margin: 12px; */
+    color: azure;
+    list-style: inside;
+}
+.Navbar ul li a{
+    color: aliceblue;
+    list-style: square;
+    padding: 2px;
+    margin: 2px;
+}
+.Navbar ul li a:hover{
+    color: black;
+    background-color: azure;
+    border-radius: 12px;
+    margin: 3px;
+    padding: 3px;
 }
