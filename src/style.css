@@ -1,0 +1,39 @@
+header{
+    color: rgb(236, 236, 243);
+    background-color: rgb(44, 40, 22);
+    margin: 0px;
+}
+
+.Navbar{
+    background-color: rgb(40, 89, 40);
+    /* display: inline-flex; */
+    color: lightcyan;
+    border-radius: 25px;
+    margin: 0px;
+    list-style: square;
+    
+}
+.Navbar ul{
+    list-style: inside;
+    color: beige;
+}
+.Navbar ul li{
+    display: inline-flex;
+    padding: 12px;
+    /* margin: 12px; */
+    color: azure;
+    list-style: inside;
+}
+.Navbar ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 2px;
+    margin: 2px;
+}
+.Navbar ul li a:hover{
+    color: black;
+    background-color: azure;
+    border-radius: 10px;
+    /* margin: 3px;
+    padding: 3px; */
+}
