@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>git cheats</title>
+    <link rel="stylesheet" href="git-cheats.css">
+</head>
+
+<body>
+    <header>
+        <img src="gitlogo-1.png" alt="git logo">
+        <h2>GitHub</h2>
+        <h1>GIT CHEAT SHEET</h1>
+
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="" target="_self">Home</a></li>
+            <li><a href="" target="_blank">GitHub</a></li>
+            <li><a href="" target="_blank">More</a></li>
+        </ul>
+    </nav>
+   
+    <section>
+        <div class="intro">
+            <p>Git is the free and open source distributed version control system that's responsible for everything
+                GitHub related that happens locally on your computer. This cheat sheet features the most important and
+                commonly used Git commands for easy reference.</p>
+        </div>
+    </section>
+    <main>
+    <section class="row-1">
+        <div class="setup">
+            <h3>SETUP</h3>
+            <p>Configuring user information used across all local repositories</p>
+            <h4>git config --global user.name "[firstname lastname]"</h4>
+            <p>set a name that is identifiable for credit when review version history</p>
+            <h4>git config --global user.email "[valid-email]"</h4>
+            <p>set an email address that will be associated with each history marker</p>
+            <h4>git config --global color.ui auto</h4>
+            <p>set automatic command line coloring for Git for easy reviewing</p>
+        </div>
+        <div class="setup-init">
+            <h3>SETUP & INIT</h3>
+            <h4>git init</h4>
+            <p>initalize an  existing directory as git repository</p>
+            <h4>git clone</h4>
+            <p>retrieve an entire repository from a hosted location via URL</p>
+        </div>
+        <div class="stage">
+            <h3>STAGE & SNAPSHOT</h3>
+            <p>Working wiht snapshot and Git staging area</p>
+            <h4>git status</h4>
+            <p>show modified files in working directory, stage for your next commit</p>
+            <h4>git add filename</h4>
+            <p>add a file as it looks now to your next commit (stage)</p>
+            <h4>git reset filename</h4>
+            <p>unstage a file while retaining the changes in working directory</p>
+            <h4>git diff</h4>
+            <p>diff of what is changed but not staged</p>
+            <h4>git diff --staged</h4>
+            <p>diff of what is stage but not yet commited</p>
+            <h4>git commit -m "descriptive message"</h4>
+            <p>commit your staged content as a new commit snapshot</p>
+        </div>
+        <div class="branch">
+            <h3>BRANCH & MERGE</h3>
+            <p>Isolating work in branches, changing context and integrating changes</p>
+            <h4>git branch</h4>
+            <p>list your branches a* will appear next to the currently active branch</p>
+            <h4>git branch branch-name</h4>
+            <p>create a new branch at the current commit</p>
+            <h4>git checkout</h4>
+            <p>switch to another branch and check it out into your working directory</p>
+            <h4>git merge branchname</h4>
+            <p>merge the specified branches history into the current one</p>
+            <h4>git log</h4>
+            <p>show all commits in the current branches history</p>
+        </div>
+    </section>
+    <section class="row-2">
+        <div class="inspect">
+            <h3>INSPECT & COMPARE</h3>
+            <p>Examining logs, diffs and object information</p>
+            <h4>git log</h4>
+            <p>show the commit history for the currently active branch</p>
+            <h4>git log branchB..branchA</h4>
+            <p>show the commits on branchA that are not on branchB</p>
+            <h4>git log --follow [file]</h4>
+            <p>show the commits that changed file, even across renames</p>
+            <h4>git diff branchB..branchA</h4>
+            <p>show the diff of what is in branchA that is not in branchB</p>
+            <h4>git show[SHA]</h4>
+            <p>show any object in Git in human-readable format</p>
+        </div>
+        <div class="tracking">
+            <h3>TRACKING PATH CHANGES</h3>
+            <p>Versioning file removes and path changes</p>
+            <h4>git rm [file]</h4>
+            <p>delete the file from project and stage the removal for commit</p>
+            <h4>git mv [existing-path] [new-path]</h4>
+            <p>change an existing file path and change the move</p>
+            <h4>git log --stat -M</h4>
+            <p>show all commit logs with indication of any paths that moved</p>
+        </div>
+
+        <div class="ignoring">
+            <h3>IGNORING PATTERNS</h3>
+            <p>Preventing unintentional staging or commiting of files</p>
+            <h4>logs/ <br>*.notes <br>pattern*/</h4>
+            <p>save a file with desired patterns as gitignore with either direct string matches or wild card globs</p>
+            <h4>git config --global core.excludesfile [file]</h4>
+            <p>system wide ignore pattern for all local repositories</p>
+        </div>
+        <div class="share">
+            <h3>SHARE & UPDATE</h3>
+            <p>Retrieving updates from another repository and updating local repos</p>
+            <h4>git remote add [alias] [url]</h4>
+            <p>add a git URL as an alias</p>
+            <h4>git fetch [alias]</h4>
+            <p>fetch down all the branches from that Git remote</p>
+            <h4>git merge [alias]/[branch]</h4>
+            <p>merge a remote branch into your current branch to bring it up to date</p>
+            <h4>git push [alias][branch]</h4>
+            <p>Transmit local branch commits to the remote repository branch</p>
+            <h4>git pull</h4>
+            <p>fetch and merge any commits from the tracking remote branch</p>
+        </div>
+        <div class="history">
+            <h3>REWRITE HISTORY</h3>
+            <p>Rewriting branches, updating commits and clearing history</p>
+            <h4>git rebase [branch]</h4>
+            <p>apply any commits of current branch ahead of specified one</p>
+            <h4>git reset --hard [commit]</h4>
+            <p>clear staging area, rewrite working tree from specified commit</p>
+        </div>
+        <div class="temporary">
+            <h3>TEMPORARY COMMITS</h3>
+            <p>Temporarily store modified tracked files in order to change branches</p>
+            <h4>git stash</h4>
+            <p>Save modified and staged changes</p>
+            <h4>git stash list</h4>
+            <p>list stack-order of stashed file changes</p>
+            <h4>git stash pop</h4>
+            <p>write working from top of stash stack</p>
+            <h4>git stash drop</h4>
+            <p>discard the changes from top of stach stack</p>
+        </div>
+    </section>
+</main>
+    <footer>
+        <div class="footercol1">
+            <h2>GITHub Education</h2>
+            <p>Teach and learn better, together. GitHub is free for students and teachers. Discounts available for other educational uses.</p>
+        </div>
+        <div class="footercol2">
+            <p>education.github.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
