@@ -72,3 +72,18 @@ li a, .dropbtn {
     position: absolute;
     border-radius: 0px
 }
+.bcgimage{
+  position: relative;
+}
+.bcgimage img{
+  opacity: 0.3;
+  width: 100%;
+}
+.bcgimage .imgtext{
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  top: 50%;
+  left: 50%;
+}

@@ -72,9 +72,17 @@ li a, .dropbtn {
     border-radius: 0px
 }
 .top-5pr{
-  background-image: url(top-5-pr.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: rgb(243, 238, 233);
-  opacity: 0.9;;
+  position: relative;
+}
+.top-5pr img{
+ opacity: 1;
+  width: 100%;
+  top: 10%;
+}
+.top-5-prtxt{
+  position: absolute;
+  color: rgb(246, 240, 234);
+  top: 10%;
+  font-size: 20px;
+  font-weight: bold;
 }
