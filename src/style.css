@@ -75,14 +75,18 @@ li a, .dropbtn {
   position: relative;
 }
 .top-5pr img{
- opacity: 1;
+ opacity: .2;
   width: 100%;
-  top: 10%;
+  top: 5%;
 }
 .top-5-prtxt{
   position: absolute;
-  color: rgb(246, 240, 234);
-  top: 10%;
+  color: rgb(40, 35, 31);
+  top: 2%;
+  right: 4%;
+  left: 4%;
+  text-align: justify;
+  text-shadow: 2px 2px rgb(167, 158, 158);
   font-size: 20px;
   font-weight: bold;
 }
